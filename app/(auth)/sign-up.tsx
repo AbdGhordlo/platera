@@ -1,23 +1,25 @@
 import CustomButton from "@/components/CustomButton";
 import CustomInput from "@/components/CustomInput";
+import { createUser, deleteCurrSession } from "@/lib/appwrite";
 import { Link, router } from "expo-router";
 import React, { useState } from "react";
-import { Alert, Text, View } from "react-native";
+import { Alert, Button, Text, View } from "react-native";
 
 const SignUp = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", password: "" });
 
   const submit = async () => {
-    if (!form.name || !form.email || !form.password)
+    const { name, email, password } = form;
+
+    if (!name || !email || !password)
       return Alert.alert("Error", "Please enter valid name, email & password");
 
     setIsSubmitting(true);
 
     try {
-      // Call Appwrite SignUp function
+      await createUser({ email, password, name });
 
-      Alert.alert("Success", "User signed in successfully");
       router.replace("/");
     } catch (error: any) {
       Alert.alert("Error", error.message);
@@ -51,7 +53,7 @@ const SignUp = () => {
         secureTextEntry={true}
       />
       <CustomButton title="Sign Up" isLoading={isSubmitting} onPress={submit} />
-
+      <Button title="Delete session" onPress={deleteCurrSession} />
       <View className="flex justify-center mt-5 flex-row gap-2">
         <Text className="base-regular text-gray-100">
           {"Already have an account?"}
