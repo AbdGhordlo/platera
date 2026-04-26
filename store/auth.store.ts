@@ -21,7 +21,7 @@ const useAuthStore = create<AuthState>((set) => ({
 
   setIsAuthenticated: (value) => set({ isAuthenticated: value }),
   setUser: (user) => set({ user }),
-  setIsLoading: (value) => set({ isLoading: value }),
+  setLoading: (value) => set({ isLoading: value }),
 
   fetchAuthenticatedUser: async () => {
     set({ isLoading: true });
@@ -39,3 +39,5 @@ const useAuthStore = create<AuthState>((set) => ({
     }
   },
 }));
+
+export default useAuthStore;
