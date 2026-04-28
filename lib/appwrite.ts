@@ -6,6 +6,7 @@ import {
   Databases,
   ID,
   Query,
+  Storage,
 } from "react-native-appwrite";
 
 export const appwriteConfig = {
@@ -13,9 +14,12 @@ export const appwriteConfig = {
   platform: "com.delta.platera",
   projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID,
   databaseId: "69e4e27d002ac9c66fc3",
+  bucketId: "69f0ae31003d607e3240",
   userCollectionId: "user",
   categoriesCollectionId: "categories",
   menuCollectionId: "menu",
+  customizationsCollectionId: "customizations",
+  menuCustomizationsCollectionId: "menu_customizations",
 };
 
 export const client = new Client();
@@ -27,6 +31,7 @@ client
 
 export const account = new Account(client);
 export const databases = new Databases(client);
+export const storage = new Storage(client);
 const avatars = new Avatars(client);
 
 export const createUser = async ({
