@@ -120,7 +120,8 @@ async function seed(): Promise<void> {
   // 4. Create Menu Items
   const menuMap: Record<string, string> = {};
   for (const item of data.menu) {
-    const uploadedImage = await uploadImageToStorage(item.image_url);
+    // const uploadedImage = await uploadImageToStorage(item.image_url);
+    const uploadedImage = item.image_url;
 
     const doc = await databases.createDocument(
       appwriteConfig.databaseId,

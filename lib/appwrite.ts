@@ -1,4 +1,4 @@
-import { CreateUserParams, SignInParams } from "@/type";
+import { CreateUserParams, GetMenuParams, SignInParams } from "@/type";
 import {
   Account,
   Avatars,
@@ -96,5 +96,14 @@ export const getCurrentUser = async () => {
   } catch (error) {
     console.log("Appwrite error:", error);
     throw error;
+  }
+};
+
+export const getMenu = async ({ category, query }: GetMenuParams) => {
+  try {
+    const queries: string[] = [];
+    if (category) queries.push(Query.equal("categories", category));
+  } catch (error) {
+    throw new Error(error as string);
   }
 };
