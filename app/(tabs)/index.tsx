@@ -38,7 +38,7 @@ export default function Index() {
               >
                 {({ pressed }) => (
                   <React.Fragment>
-                    <View className={"h-full w-1/2"}>
+                    <View className={"h-full w-1/2 py-[2%]"}>
                       <Image
                         source={item.image}
                         className="size-full"

@@ -12,7 +12,7 @@ const TabBarIcon = ({ focused, icon, title }: TabBarIconProps) => (
       source={icon}
       className="size-7"
       resizeMode="contain"
-      tintColor={focused ? "#FE8C00" : "#5D5F6D"}
+      tintColor={focused ? "#9580ff" : "#5D5F6D"}
     />
     <Text
       className={cn(

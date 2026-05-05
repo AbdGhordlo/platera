@@ -32,7 +32,7 @@ const CartItem = ({ item }: { item: CartItemType }) => {
                 source={images.minus}
                 className="size-1/2"
                 resizeMode="contain"
-                tintColor={"#FF9C01"}
+                tintColor={"#9580ff"}
               />
             </TouchableOpacity>
 
@@ -46,7 +46,7 @@ const CartItem = ({ item }: { item: CartItemType }) => {
                 source={images.plus}
                 className="size-1/2"
                 resizeMode="contain"
-                tintColor={"#FF9C01"}
+                tintColor={"#9580ff"}
               />
             </TouchableOpacity>
           </View>
@@ -57,7 +57,12 @@ const CartItem = ({ item }: { item: CartItemType }) => {
         onPress={() => removeItem(item.id, item.customizations!)}
         className="flex-center"
       >
-        <Image source={images.trash} className="size-5" resizeMode="contain" />
+        <Image
+          source={images.trash}
+          className="size-5"
+          resizeMode="contain"
+          tintColor={"#9580ff"}
+        />
       </TouchableOpacity>
     </View>
   );
