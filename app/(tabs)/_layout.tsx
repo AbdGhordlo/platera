@@ -3,7 +3,6 @@ import useAuthStore from "@/store/auth.store";
 import { TabBarIconProps } from "@/type";
 import cn from "clsx";
 import { Redirect, Tabs } from "expo-router";
-import React from "react";
 import { Image, Text, View } from "react-native";
 
 const TabBarIcon = ({ focused, icon, title }: TabBarIconProps) => (
@@ -12,7 +11,7 @@ const TabBarIcon = ({ focused, icon, title }: TabBarIconProps) => (
       source={icon}
       className="size-7"
       resizeMode="contain"
-      tintColor={focused ? "#9580ff" : "#5D5F6D"}
+      tintColor={focused ? "#FE8C00" : "#5D5F6D"}
     />
     <Text
       className={cn(
@@ -28,9 +27,8 @@ const TabBarIcon = ({ focused, icon, title }: TabBarIconProps) => (
 export default function TabLayout() {
   const { isAuthenticated } = useAuthStore();
 
-  if (!isAuthenticated) {
-    return <Redirect href={"/sign-in"} />;
-  }
+  if (!isAuthenticated) return <Redirect href="/sign-in" />;
+
   return (
     <Tabs
       screenOptions={{
@@ -59,7 +57,7 @@ export default function TabLayout() {
         options={{
           title: "Home",
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} icon={images.home} title="Home" />
+            <TabBarIcon title="Home" icon={images.home} focused={focused} />
           ),
         }}
       />
@@ -68,7 +66,7 @@ export default function TabLayout() {
         options={{
           title: "Search",
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} icon={images.search} title="Search" />
+            <TabBarIcon title="Search" icon={images.search} focused={focused} />
           ),
         }}
       />
@@ -77,7 +75,7 @@ export default function TabLayout() {
         options={{
           title: "Cart",
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} icon={images.bag} title="Cart" />
+            <TabBarIcon title="Cart" icon={images.bag} focused={focused} />
           ),
         }}
       />
@@ -87,9 +85,9 @@ export default function TabLayout() {
           title: "Profile",
           tabBarIcon: ({ focused }) => (
             <TabBarIcon
-              focused={focused}
-              icon={images.person}
               title="Profile"
+              icon={images.person}
+              focused={focused}
             />
           ),
         }}

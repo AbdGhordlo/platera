@@ -15,9 +15,9 @@ const CustomButton = ({
     <TouchableOpacity className={cn("custom-btn", style)} onPress={onPress}>
       {leftIcon}
 
-      <View className="flexe-center flex-row">
+      <View className="flex-center flex-row">
         {isLoading ? (
-          <ActivityIndicator size={"small"} color={"white"} />
+          <ActivityIndicator size="small" color="white" />
         ) : (
           <Text className={cn("text-white-100 paragraph-semibold", textStyle)}>
             {title}
@@ -27,5 +27,4 @@ const CustomButton = ({
     </TouchableOpacity>
   );
 };
-
 export default CustomButton;

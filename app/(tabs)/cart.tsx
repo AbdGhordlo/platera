@@ -4,7 +4,6 @@ import CustomHeader from "@/components/CustomHeader";
 import { useCartStore } from "@/store/cart.store";
 import { PaymentInfoStripeProps } from "@/type";
 import cn from "clsx";
-import React from "react";
 import { FlatList, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -34,11 +33,11 @@ const Cart = () => {
     <SafeAreaView className="bg-white h-full">
       <FlatList
         data={items}
-        keyExtractor={(item) => item.id}
         renderItem={({ item }) => <CartItem item={item} />}
+        keyExtractor={(item) => item.id}
         contentContainerClassName="pb-28 px-5 pt-5"
         ListHeaderComponent={() => <CustomHeader title="Your Cart" />}
-        ListEmptyComponent={() => <Text>Your cart is empty</Text>}
+        ListEmptyComponent={() => <Text>Cart Empty</Text>}
         ListFooterComponent={() =>
           totalItems > 0 && (
             <View className="gap-5">
@@ -54,7 +53,7 @@ const Cart = () => {
                 <PaymentInfoStripe label={`Delivery Fee`} value={`$5.00`} />
                 <PaymentInfoStripe
                   label={`Discount`}
-                  value={`-$0.50`}
+                  value={`- $0.50`}
                   valueStyle="!text-success"
                 />
                 <View className="border-t border-gray-300 my-2" />

@@ -41,11 +41,6 @@ import salad from "@/assets/images/salad.png";
 import success from "@/assets/images/success.png";
 import tomatoes from "@/assets/images/tomatoes.png";
 
-import classicNovel1 from "@/assets/images/Classic-Novel-2.jpg";
-import fictionNovel from "@/assets/images/Fiction-Novel.jpg";
-import NonFiction from "@/assets/images/Non-Fiction.jpg";
-import webNovel from "@/assets/images/Web-Novel.jpg";
-
 export const CATEGORIES = [
   {
     id: "1",
@@ -72,27 +67,27 @@ export const CATEGORIES = [
 export const offers = [
   {
     id: 1,
-    title: "Fiction",
-    image: classicNovel1,
-    color: "#99bdff",
+    title: "SUMMER COMBO",
+    image: burgerOne,
+    color: "#D33B0D",
   },
   {
     id: 2,
-    title: "Non-Fiction",
-    image: NonFiction,
-    color: "#80acff",
+    title: "BURGER BASH",
+    image: burgerTwo,
+    color: "#DF5A0C",
   },
   {
     id: 3,
-    title: "Children & Young Adults",
-    image: fictionNovel,
-    color: "#aa99ff",
+    title: "PIZZA PARTY",
+    image: pizzaOne,
+    color: "#084137",
   },
   {
     id: 4,
-    title: "Web & Light Novels",
-    image: webNovel,
-    color: "#a6a6a6",
+    title: "BURRITO DELIGHT",
+    image: buritto,
+    color: "#EB920C",
   },
 ];
 
