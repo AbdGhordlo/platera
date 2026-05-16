@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/logo.png" alt="Platera Logo" width="350" />
+  <img src="assets/images/logo.png" alt="Platera Logo" width="300" />
 </p>
 
 <h1 align="center">Platera</h1>
@@ -67,6 +67,7 @@ Platera uses Appwrite as the backend/database solution and Zustand for lightweig
 
 <p align="center">
   <img src="assets/images/screens/sign-in.png" width="250" />
+  &nbsp;&nbsp;&nbsp;
   <img src="assets/images/screens/sign-up.png" width="250" />
 </p>
 
@@ -75,21 +76,7 @@ Platera uses Appwrite as the backend/database solution and Zustand for lightweig
 ## Home Screen
 
 <p align="center">
-  <img src="assets/images/screens/home-1.png" width="220" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/images/screens/home-2.png" width="220" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/images/screens/home-3.png" width="220" />
-</p>
-
----
-
-## Menu & Food Details
-
-<p align="center">
-  <img src="assets/images/screens/menu-1.png" width="220" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/images/screens/menu-2.png" width="220" />
+  <img src="assets/images/screens/home.png" width="220" />
 </p>
 
 ---
