@@ -1,50 +1,129 @@
-# Welcome to your Expo app 👋
+<p align="center">
+  <img src="assets/images/logo.png" alt="Platera Logo" width="350" />
+</p>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<h1 align="center">Platera</h1>
 
-## Get started
+<p align="center">
+  A modern React Native food ordering demo application built for browsing meals, customizing orders, and delivering a smooth mobile ordering experience.
+</p>
 
-1. Install dependencies
+<p align="center">
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Zustand-18181B?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Appwrite-F02E65?style=for-the-badge&logo=appwrite&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+</p>
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+# 🍔 About Platera
 
-   ```bash
-   npx expo start
-   ```
+Platera is a mobile food ordering demo application built with React Native and Expo.
 
-In the output, you'll find options to open the app in a
+The app allows users to browse meals, explore categories, customize menu items, manage their cart, and place food orders through a clean and responsive mobile interface.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Platera uses Appwrite as the backend/database solution and Zustand for lightweight global state management.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+# ✨ Features
 
-When you're ready, run:
+- 🔐 User Authentication
+  - Sign In
+  - Sign Up
+  - Session-based authentication
 
-```bash
-npm run reset-project
-```
+- 🏠 Home Screen
+  - Featured meals and promotions
+  - Browse food categories
+  - Personalized recommendations
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- 🍕 Menu System
+  - View meal details
+  - Ratings and nutritional information
+  - Meal customization support
 
-## Learn more
+- 🛒 Cart Management
+  - Add/remove meals
+  - Quantity management
+  - Persistent cart state using Zustand
 
-To learn more about developing your project with Expo, look at the following resources:
+- 🔎 Search & Discovery
+  - Search meals dynamically
+  - Explore categories and offers
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- 👤 User Profile
+  - Account information
+  - Order-related functionality
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+# 📱 Screens
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Authentication
+
+<p align="center">
+  <img src="assets/images/screens/sign-in.png" width="250" />
+  <img src="assets/images/screens/sign-up.png" width="250" />
+</p>
+
+---
+
+## Home Screen
+
+<p align="center">
+  <img src="assets/images/screens/home-1.png" width="220" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/images/screens/home-2.png" width="220" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/images/screens/home-3.png" width="220" />
+</p>
+
+---
+
+## Menu & Food Details
+
+<p align="center">
+  <img src="assets/images/screens/menu-1.png" width="220" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/images/screens/menu-2.png" width="220" />
+</p>
+
+---
+
+## Search Screen
+
+<p align="center">
+  <img src="assets/images/screens/search.png" width="250" />
+</p>
+
+---
+
+## Cart Screen
+
+<p align="center">
+  <img src="assets/images/screens/cart.png" width="250" />
+</p>
+
+---
+
+## Profile Screen
+
+<p align="center">
+  <img src="assets/images/screens/profile.png" width="250" />
+</p>
+
+---
+
+# 🛠️ Tech Stack
+
+- React Native
+- Expo
+- Expo Router
+- TypeScript
+- Zustand
+- Appwrite
+- TailwindCSS / NativeWind
